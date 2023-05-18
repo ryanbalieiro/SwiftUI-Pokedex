@@ -28,3 +28,31 @@ The project files have been organized into the following groups:
 - Views: The presentation layer, designed to showcase the app's state focusing solely on displaying information without encumbering itself with business logic.
 
 ## Screenshots
+
+- Pokemon List:
+
+![alt text](Screenshots/spacer.png)
+![alt text](Screenshots/screenshot-light-01.png)
+![alt text](Screenshots/spacer.png)
+![alt text](Screenshots/screenshot-dark-01.png)
+
+- Pokemon Details:
+
+![alt text](Screenshots/spacer.png)
+![alt text](Screenshots/screenshot-light-02.png)
+![alt text](Screenshots/spacer.png)
+![alt text](Screenshots/screenshot-dark-02.png)
+
+- Pokemon Collection:
+
+![alt text](Screenshots/spacer.png)
+![alt text](Screenshots/screenshot-light-03.png)
+![alt text](Screenshots/spacer.png)
+![alt text](Screenshots/screenshot-dark-03.png)
+
+- Comparing two Pokémon:
+
+![alt text](Screenshots/spacer.png)
+![alt text](Screenshots/screenshot-light-04.png)
+![alt text](Screenshots/spacer.png)
+![alt text](Screenshots/screenshot-dark-04.png)
