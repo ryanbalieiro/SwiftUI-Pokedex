@@ -1,0 +1,74 @@
+/*
+  Localizable.strings
+  Pokedex
+  Created by Ryan Balieiro on 17/03/22
+*/
+
+/* Keywords */
+"about" = "About";
+"add" = "Add";
+"attack" = "Attack";
+"catalog" = "Catalog";
+"compare" = "Compare";
+"defense" = "Defense";
+"description" = "Description";
+"error" = "Error";
+"evolution_chain" = "Evolution Chain";
+"height" = "Height";
+"last_update" = "Last Update";
+"loading" = "Loading";
+"not_found" = "Not found";
+"ok" = "OK";
+"owned" = "Owned";
+"owned_pokemon" = "Owned Pokemon";
+"percentage" = "Percentage";
+"proceed" = "Proceed";
+"progress" = "Progress";
+"retry" = "Retry";
+"stats" = "Stats";
+"total" = "Total";
+"total_found" = "Total Found";
+"total_species" = "Total Species";
+"version" = "Version";
+"weight" = "Weight";
+"without_duplications" = "Without Duplications";
+
+/** Pokémon Types */
+"unknown" = "Unknown";
+"normal" = "Normal";
+"fire" = "Fire";
+"water" = "Water";
+"grass" = "Grass";
+"electric" = "Electric";
+"ice" = "Ice";
+"fighting" = "Fighting";
+"poison" = "Poison";
+"ground" = "Ground";
+"flying" = "Flying";
+"psychic" = "Psychic";
+"bug" = "Bug";
+"rock" = "Rock";
+"ghost" = "Ghost";
+"dragon" = "Dragon";
+"dark" = "Dark";
+"steel" = "Steel";
+"fairy" = "Fairy";
+
+/* Preload */
+"preload_made_by" = "Made by Ryan Balieiro";
+"preload_retry_error" = "Failed to retrieve the Pokémon list. Please check your internet connection and try again.";
+"preload_title" = "SwiftUI Pokédex";
+"preload_welcome_message" = "Welcome To";
+
+/* Owned Tab */
+"owned_tab_error_adding" = "There was an error adding the pokémon! Try freeing up some storage.";
+"owned_tab_error_deleting" = "There was an error deleting the pokémon!";
+
+/** Compare Tab */
+"compare_tab_instructions" = "Tap a pokémon to change it";
+
+/* Widgets */
+"no_evolution_chain" = "This Pokémon doesn't seem to have any evolutions.";
+"pokemon_picker_select" = "Select Pokémon";
+"pokemon_picker_enter_name" = "Enter Pokemon Name";
+
