@@ -10,6 +10,7 @@ import SwiftUI
 struct OwnedTab: View {
     @StateObject var ownedTabViewModel = OwnedTabViewModel()
     @StateObject var pokemonPickerViewModel = PokemonPickerViewModel()
+    @StateObject var coreDataManager = CoreDataManager.shared
     
     var body: some View {
         NavigationView {
@@ -62,22 +63,33 @@ fileprivate struct OwnedList: View {
     
     var body: some View {
         List {
-            ForEach(ownedTabViewModel.getFilterResults(coreDataManager.pokemonList)) { pokemonEntity in
-                OwnedListItem(pokemonEntity: pokemonEntity)
+            Group {
+                ForEach(listItems) { pokemonEntity in
+                    OwnedListItem(pokemonEntity: pokemonEntity)
+                }
+                .onDelete(perform: onDelete)
+                .listRowBackground(Color(AssetColors.Background).opacity(0.2))
+                
+                if listItems.isEmpty {
+                    Spacer()
+                }
             }
-            .onDelete(perform: onDelete)
-            .listRowBackground(Color(AssetColors.Background).opacity(0.2))
+            .listRowBackground(Color.clear)
         }
         .searchable(text: $ownedTabViewModel.listSearchTerm)
         .disableAutocorrection(true)
         .listStyle(PlainListStyle())
-        .background(Color.clear)
+        .scrollContentBackground(.hidden)
+    }
+    
+    var listItems: [PokemonEntity] {
+        return ownedTabViewModel.getFilterResults(coreDataManager.pokemonList)
     }
     
     func onDelete(indexSet:IndexSet) {
         withAnimation {
             let indices = Array(indexSet)
-            let pokemonToDelete = indices.map { ownedTabViewModel.getFilterResults(coreDataManager.pokemonList)[$0] }
+            let pokemonToDelete = indices.map { listItems[$0] }
             pokemonToDelete.forEach {
                 ownedTabViewModel.deletePokemon(pokemonEntity: $0)
             }
