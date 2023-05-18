@@ -40,6 +40,9 @@ struct StatsTab: View {
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear {
+            viewModel.updateStats()
+        }
     }
     
     static let LIST_ROW_BACKGROUND = Color(AssetColors.Background)

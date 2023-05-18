@@ -8,16 +8,16 @@
 import Foundation
 
 class StatsTabViewModel:ObservableObject {
-    @Published var totalOwnedStr:String
-    @Published var totalOwnedWithoutDuplicationsStr:String
+    @Published var totalOwnedStr:String = ""
+    @Published var totalOwnedWithoutDuplicationsStr:String = ""
     
-    @Published var totalSpeciesStr:String
-    @Published var percentageStr:String
+    @Published var totalSpeciesStr:String = ""
+    @Published var percentageStr:String = ""
     
-    @Published var versionStr:String
-    @Published var lastUpdateStr:String
+    @Published var versionStr:String = ""
+    @Published var lastUpdateStr:String = ""
     
-    init() {
+    func updateStats() {
         let totalSpecies = PokemonSpecies.allCases.count
         self.totalSpeciesStr = String(totalSpecies)
         
