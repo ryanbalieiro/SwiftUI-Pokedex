@@ -38,13 +38,13 @@ class ContentViewModel: ObservableObject {
     }
     
     func onFetchCompletion(completion: Subscribers.Completion<Error>) {
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [weak self] in
             switch completion {
             case .finished:
-                self.status = .readyToDisplay
-                self.backendlessCancelable?.cancel()
+                self?.status = .readyToDisplay
+                self?.backendlessCancelable?.cancel()
             case .failure:
-                self.status = .failedToDownload
+                self?.status = .failedToDownload
             }
         }
     }
