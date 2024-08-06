@@ -157,8 +157,8 @@ class BackendlessManager {
 
 /** URLs */
 extension BackendlessManager {
-    private static let CATALOG_URL = "https://backendlessappcontent.com/288925C7-BA93-5ADF-FF72-D2AE97DA4700/D7EA40A4-E698-56CE-FFD0-296CACE9FE00/files/pokedex/pokemon.json"
-    private static let ASSETS_URL = "https://backendlessappcontent.com/288925C7-BA93-5ADF-FF72-D2AE97DA4700/D7EA40A4-E698-56CE-FFD0-296CACE9FE00/files/pokedex/images.zip"
+    private static let CATALOG_URL = "https://ryanbalieiro.com/assets/static/pokemon.json"
+    private static let ASSETS_URL = "https://ryanbalieiro.com/assets/static/pokemon.zip"
     private static let DESTINATION_URI = NSTemporaryDirectory() + "assets/"
 }
 
