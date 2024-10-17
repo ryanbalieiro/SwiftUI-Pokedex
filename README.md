@@ -1,58 +1,41 @@
-
-# SwiftUI Pokédex
+# <img src="readme-assets/logo.png"> SwiftUI Pokédex
 
 This demo project showcases the setup of the SwiftUI framework with the Clean MVVM architecture.
 
-Similar to the original Pokédex, the implementation serves as an extensive repository of knowledge, providing detailed profiles and statistics for each Pokémon, including their types, abilities, evolutionary stages, base stats, and more.
+## Preview 
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+Just like the original Pokédex, it gives you detailed profiles and stats for every Pokémon, covering their types, abilities, evolution stages, base stats, and more:
 
+![alt tag1](readme-assets/preview.gif)
 
 ## Key Features
 
-- Presentation layer implemented using SwiftUI
-- Data persistence using CoreData
-- Dynamic fetching and updating of app data from a BAAS service
-- Utilization of Combine for interaction with the Network layer
-- Designed with scalability in mind
+- The app's UI is built with SwiftUI.
+- CoreData is used for saving and managing data.
+- It dynamically fetches and updates data from the cloud.
+- Combine is used for handling network interactions.
+- The whole design is focused on scalability for future growth.
 
 ## Project Overview
 
-The project files have been organized into the following groups:
+The project is organized into these groups:
 
-- Data: This layer takes charge of persistent storage and entity retrieval from CoreData, ensuring data integrity and seamless access.
-- Helpers: A collection of methods, constants, and extensions crafted to serve multiple classes throughout the application.
-- Models: The heart and soul of the project - it implements the business logic, capturing the essence of the app's functionality.
-- Network: A dedicated layer responsible for handling data retrieval from the server.
-- ViewModels: Classes that serve as a link connecting the logical layer with the views.
-- Views: The presentation layer, designed to showcase the app's state focusing solely on displaying information without encumbering itself with business logic.
+- **Data**: Handles saving and loading data with CoreData, making sure persistence is kept.
+- **Helpers**: Contains useful methods, constants, and extensions that can be reused across the app.
+- **Models**: Manages the core functionality and business logic.
+- **Network**: Responsible for getting data from the server.
+- **ViewModels**: Bridges the gap between the app’s logic and the user interface.
+- **Views**: Focuses on displaying data to users.
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Screenshots
 
-- Pokemon List:
+### 1. Dark Mode
 
-![alt text](Screenshots/spacer.png)
-![alt text](Screenshots/screenshot-light-01.png)
-![alt text](Screenshots/spacer.png)
-![alt text](Screenshots/screenshot-dark-01.png)
+![alt tag1](readme-assets/dark.png)
 
-- Pokemon Details:
+### 2. Light Mode
 
-![alt text](Screenshots/spacer.png)
-![alt text](Screenshots/screenshot-light-02.png)
-![alt text](Screenshots/spacer.png)
-![alt text](Screenshots/screenshot-dark-02.png)
+![alt tag1](readme-assets/light.png)
 
-- Pokemon Collection:
-
-![alt text](Screenshots/spacer.png)
-![alt text](Screenshots/screenshot-light-03.png)
-![alt text](Screenshots/spacer.png)
-![alt text](Screenshots/screenshot-dark-03.png)
-
-- Comparing two Pokémon:
-
-![alt text](Screenshots/spacer.png)
-![alt text](Screenshots/screenshot-light-04.png)
-![alt text](Screenshots/spacer.png)
-![alt text](Screenshots/screenshot-dark-04.png)
