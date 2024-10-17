@@ -2,11 +2,7 @@
 
 This demo project showcases the setup of the SwiftUI framework with the Clean MVVM architecture.
 
-## Preview 
-
-Just like the original Pokédex, it gives you detailed profiles and stats for every Pokémon, covering their types, abilities, evolution stages, base stats, and more:
-
-![alt tag1](readme-assets/preview.gif)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Key Features
 
@@ -27,8 +23,6 @@ The project is organized into these groups:
 - **ViewModels**: Bridges the gap between the app’s logic and the user interface.
 - **Views**: Focuses on displaying data to users.
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
 ## Screenshots
 
 ### 1. Dark Mode
@@ -39,3 +33,9 @@ The project is organized into these groups:
 
 ![alt tag1](readme-assets/light.png)
 
+## Preview
+
+Just like the original Pokédex, it gives you detailed profiles and stats for every Pokémon, covering their types, abilities, evolution stages, base stats, and more:
+
+![alt tag1](readme-assets/preview1.gif)
+![alt tag1](readme-assets/preview2.gif)
