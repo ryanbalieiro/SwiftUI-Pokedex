@@ -1,8 +1,6 @@
-# <img src="readme-assets/logo.png"> SwiftUI Pokédex
+# <img src="readme-assets/logo.png"> SwiftUI Pokédex by Ryan Balieiro
 
 This demo project showcases the setup of the SwiftUI framework with the Clean MVVM architecture.
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Key Features
 
@@ -25,12 +23,9 @@ The project is organized into these groups:
 
 ## Screenshots
 
-### 1. Dark Mode
+The app supports both dark and light modes, automatically adjusting to match the user’s preferences. Here are the main screens for each display mode:
 
 ![alt tag1](readme-assets/dark.png)
-
-### 2. Light Mode
-
 ![alt tag1](readme-assets/light.png)
 
 ## Preview
@@ -39,3 +34,9 @@ Just like the original Pokédex, it gives you detailed profiles and stats for ev
 
 ![alt tag1](readme-assets/preview1.gif)
 ![alt tag1](readme-assets/preview2.gif)
+
+## Copyright and License
+
+Code released under the [MIT](https://github.com/ryanbalieiro/SwiftUI-Pokedex/blob/main/LICENSE) license. This means you're welcome to use, modify, and distribute the code, provided the original license and copyright notice are included.
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
