@@ -6,9 +6,9 @@ This demo project showcases the setup of the SwiftUI framework with the Clean MV
 
 ## Key Features
 
-- The app's UI is built with SwiftUI.
+- The app's UI is entirely built with SwiftUI.
 - CoreData is used for saving and managing data.
-- It dynamically fetches and updates data from the cloud.
+- It dynamically fetches and updates the Pokémon catalog from the cloud.
 - Combine is used for handling network interactions.
 - The whole design is focused on scalability for future growth.
 
@@ -16,7 +16,7 @@ This demo project showcases the setup of the SwiftUI framework with the Clean MV
 
 The project is organized into these groups:
 
-- **Data**: Handles saving and loading data with CoreData, making sure persistence is kept.
+- **Data**: Handles saving and loading local data with CoreData.
 - **Helpers**: Contains useful methods, constants, and extensions that can be reused across the app.
 - **Models**: Manages the core functionality and business logic.
 - **Network**: Responsible for getting data from the server.
