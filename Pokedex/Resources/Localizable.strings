@@ -61,6 +61,7 @@
 "preload_welcome_message" = "Welcome To";
 
 /* Owned Tab */
+"no_owned" = "No Pokémon owned yet!";
 "owned_tab_error_adding" = "There was an error adding the pokémon! Try freeing up some storage.";
 "owned_tab_error_deleting" = "There was an error deleting the pokémon!";
 

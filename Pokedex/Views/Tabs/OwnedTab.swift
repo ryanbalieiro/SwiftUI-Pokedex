@@ -62,24 +62,34 @@ fileprivate struct OwnedList: View {
     @StateObject var coreDataManager = CoreDataManager.shared
     
     var body: some View {
-        List {
-            Group {
+        if listItems.isEmpty {
+            VStack {
+                Image(AssetImages.PokeballIconDisabled)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
+                    .opacity(0.6)
+                
+                Text("no_owned".localized())
+                    .font(.title2)
+                    .foregroundColor(Color(AssetColors.Muted))
+                    .padding()
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+        else {
+            List {
                 ForEach(listItems) { pokemonEntity in
                     OwnedListItem(pokemonEntity: pokemonEntity)
                 }
                 .onDelete(perform: onDelete)
                 .listRowBackground(Color(AssetColors.Background).opacity(0.2))
-                
-                if listItems.isEmpty {
-                    Spacer()
-                }
             }
-            .listRowBackground(Color.clear)
+            .searchable(text: $ownedTabViewModel.listSearchTerm)
+            .disableAutocorrection(true)
+            .listStyle(PlainListStyle())
+            .scrollContentBackground(.hidden)
         }
-        .searchable(text: $ownedTabViewModel.listSearchTerm)
-        .disableAutocorrection(true)
-        .listStyle(PlainListStyle())
-        .scrollContentBackground(.hidden)
     }
     
     var listItems: [PokemonEntity] {
