@@ -157,8 +157,8 @@ class BackendlessManager {
 
 /** URLs */
 extension BackendlessManager {
-    private static let CATALOG_URL = "https://ryanbalieiro.com/assets/static/pokemon.json"
-    private static let ASSETS_URL = "https://ryanbalieiro.com/assets/static/pokemon.zip"
+    private static let CATALOG_URL = "https://admin.ryanbalieiro.com/files/pokemon.json"
+    private static let ASSETS_URL = "https://admin.ryanbalieiro.com/files/pokemon.zip"
     private static let DESTINATION_URI = NSTemporaryDirectory() + "assets/"
 }
 
