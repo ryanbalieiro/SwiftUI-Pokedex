@@ -1,4 +1,8 @@
-# <img src="readme-assets/logo.png"> SwiftUI Pokédex by Ryan Balieiro
+<p align="center">
+    <img src="readme-assets/logo.png" width="150">
+</p>
+
+# SwiftUI Pokédex by Ryan Balieiro
 
 This demo project showcases the setup of the SwiftUI framework with the Clean MVVM architecture.
 
@@ -25,8 +29,8 @@ The project is organized into these groups:
 
 The app supports both dark and light modes, automatically adjusting to match the user’s preferences. Here are the main screens for each display mode:
 
-![alt tag1](readme-assets/dark.png)
-![alt tag1](readme-assets/light.png)
+![alt tag1](readme-assets/screenshots-dark.png)
+![alt tag1](readme-assets/screenshots-light.png)
 
 ## Preview
 
