@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="readme-assets/logo.png" width="150">
+    <img src="readme-assets/logo-512.png" width="150">
 </p>
 
 # SwiftUI Pokédex by Ryan Balieiro
